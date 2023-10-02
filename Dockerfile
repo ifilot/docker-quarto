@@ -2,7 +2,7 @@ FROM eddelbuettel/r2u:22.04
 
 RUN apt-get update
 RUN apt-get install -y --no-install-recommends pandoc pandoc-citeproc curl gdebi-core 
-RUN apt-get install -y python3-pip python3-pandas python3-plotly python3-numpy python3-scipy python3-matplotlib python3-jupyter-client python3-jupyter-core python3-nbclient
+RUN apt-get install -y python3-pip python3-pandas python3-plotly python3-numpy python3-scipy python3-matplotlib python3-jupyter-client python3-jupyter-core python3-nbclient python3-jinja2
 RUN pip3 install ipykernel
 RUN python3 -m ipykernel install
 RUN rm -rf /var/lib/apt/lists/*
